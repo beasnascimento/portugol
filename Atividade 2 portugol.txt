@@ -1,0 +1,188 @@
+\\Questão1
+
+
+programa
+{
+	
+	funcao inicio()
+	{
+	
+real P = 0
+real M = 0
+real E = 0
+
+escreva("/n Qual o peso?")
+leia(P)
+
+se (P > 50)
+{
+    E = P - 50
+    M = E * 4
+    escreva("/n O valor da mult é: ", M )
+}
+senao 
+escreva (E , M)
+}
+}
+
+
+//questão 2
+
+programa
+{
+	
+	funcao inicio()
+	{
+	
+real C,N
+real S = 10.00
+real E = 20.00 
+escreva ("Digite o numero de horas trabalhadas: ")
+leia(N)
+
+
+
+se (N <=50)
+{
+	escreva( "Seu salario é: ", N * 10)
+	
+}
+senao 
+{
+    E = N - 50
+    escreva ("Seu salario é: ", (E * 20) + ( 50*10) ) 
+
+	}
+}
+}
+
+//questão 3
+
+programa
+{
+	inclua biblioteca Matematica
+ --> mat
+	
+	funcao inicio()
+	{
+	
+
+real n1,n2,n3,n4,q1,q2,q3,q4
+
+escreva("Qual o valor do n1? ")
+leia(n1)
+escreva("Qual o valor do n2? ")
+leia(n2)
+escreva("Qual o valor do n3? ")
+leia(n3)
+escreva("Qual o valor do n4? ")
+leia(n4)
+
+q1 = mat.potencia(n1,2.0)
+q2 = mat.potencia(n2,2.0)
+q3 = mat.potencia(n3,2.0)
+q4 = mat.potencia(n4,2.0)
+se (q3 >= 1000)
+{
+	escreva("Quadrado do num terceiro é: ", q3)
+}
+senao
+{
+ escreva ("\nValor1 : " , n1 , "seu quadrado" , q1)
+escreva ("\nValor2 : " , n2 , "seu quadrado" , q2)
+escreva ("\nValor3 : " , n3 , "seu quadrado" , q3)
+escreva ("\nValor4 : " , n4 , "seu quadrado" , q4)
+
+	}}
+	
+}
+
+\\questão 4
+
+programa
+{
+	inclua biblioteca Matematica
+ --> mat
+	
+	funcao inicio()
+	{
+
+	inteiro num,cal 
+
+	escreva("\n Entre com qualquer número: ")
+     leia(num)
+
+     se(num % 2 == 0)
+{ 
+	 se(num > 0)
+{
+escreva ("\n Número par e positivo")
+} 
+
+senao 
+{ 
+	escreva("/n Numero par e negativo")
+}
+}
+senao
+{
+	se(num>0)
+{
+	escreva("numero impar e positivo")
+
+}
+senao
+{
+	escreva("Número impar e negativo")
+}
+	
+}
+}
+
+}
+
+\\questão 5
+
+
+programa
+{
+	
+	
+	funcao inicio()
+	{
+
+real ip
+
+escreva("\nEntre com o indice de poluição: ")
+leia(ip)
+
+se (ip >= 0.05 e ip <= 0.25)
+{
+	escreva ("\níndice aceitavel")
+}
+senao se( ip > 0.25 e ip <= 0.3)
+{
+	escreva("\n Notificar empresa do primeiro grupo")
+}
+senao se (ip > 0.3 e ip <= 0.4)
+	{
+	escreva("\n Notificar empresa do primeiro e segundo grupo")
+}
+senao se (ip > 0.4)
+	{
+	escreva("\n Notificar empresa do primeiro, segundo e terceiro grupo")
+}
+senao 
+{
+	escreva("\nSem notificação")
+
+
+}
+
+	
+}
+	
+}
+
+\\QUESTÃO 6
+
